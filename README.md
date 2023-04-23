@@ -18,4 +18,4 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 We provide the data for the results in a local `data.json` file. So you can use that to add the results and total score dynamically if you choose.
 
-This are my results.
+This are my results using JavaScript Vanilla, CSS and HTML.
