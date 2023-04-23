@@ -12,6 +12,8 @@
   --green-tea-0: hsla(166, 100%, 37%, 0.1);
   --cobalt-blue-0: hsla(234, 85%, 45%, 0.1);
 
+
+  
   /* Gradients */
   --light-slate-blue: hsl(252, 100%, 67%);
   --light-royal-blue: hsl(241, 81%, 54%);
@@ -22,6 +24,7 @@
   --pale-blue: hsl(221, 100%, 96%);
   --light-lavender: hsl(241, 100%, 89%);
   --dark-gray-blue: hsl(224, 30%, 27%);
+  
 }
 
 * {
@@ -33,28 +36,32 @@
   border: none;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  height: 100vh;
   font-size: 18px;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 .main-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
-  height: 100vh;
+  margin-top: 10em;
 }
 
 .card-container {
-  margin-top: 15rem;
   width: 750px;
   height: 525px;
   display: flex;
   flex-direction: row;
-  box-shadow: 1px 5px 13px -4px rgba(0, 0, 0, 0.88);
-  -webkit-box-shadow: 1px 5px 13px -4px rgba(0, 0, 0, 0.88);
-  -moz-box-shadow: 1px 5px 13px -4px rgba(0, 0, 0, 0.88);
+  box-shadow: .5rem 1rem 3rem hsla(224, 30%, 27%, .2);
   border-radius: 2em;
 }
 
@@ -127,7 +134,8 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 .card_2 {
@@ -149,10 +157,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.75rem;
 }
 
-.count-p {
+.count-p, .card_2 h3 {
   color: var(--dark-gray-blue);
 }
 
@@ -216,15 +223,15 @@ body {
 }
 
 @media screen and (max-width: 765px) {
-  .card-container {
+  .main-container {
     margin-top: 0;
+  }
+  .card-container {
     width: 375px;
     height: 850px;
     display: flex;
     flex-direction: column;
-    box-shadow: 1px 5px 13px -4px rgba(0, 0, 0, 0.88);
-    -webkit-box-shadow: 1px 5px 13px -4px rgba(0, 0, 0, 0.88);
-    -moz-box-shadow: 1px 5px 13px -4px rgba(0, 0, 0, 0.88);
+    box-shadow: .5rem 1rem 3rem hsla(224, 30%, 27%, .2);
     border-radius: 2em;
   }
   .card_1, .card_2 {
@@ -233,11 +240,7 @@ body {
     padding: 0;
   }
 
-  .card_1 h3 {
-    margin-top: 20rem;
-  }
-
-  .card_1 h3 {
-    margin-top: 1.5rem;
+  .card_2-content {
+    gap: 1rem;
   }
 }

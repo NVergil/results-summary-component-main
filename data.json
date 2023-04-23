@@ -1,25 +1,25 @@
 [
   {
     "category": "Reaction",
-    "score": 81,
+    "score": 80,
     "icon": "./assets/images/icon-reaction.svg",
     "alt": "reaction"
   },
   {
     "category": "Memory",
-    "score": 25,
+    "score": 87,
     "icon": "./assets/images/icon-memory.svg",
     "alt": "memory"
   },
   {
     "category": "Verbal",
-    "score": 61,
+    "score": 75,
     "icon": "./assets/images/icon-verbal.svg",
     "alt": "verbal"
   },
   {
     "category": "Visual",
-    "score": 62,
+    "score": 86,
     "icon": "./assets/images/icon-visual.svg",
     "alt": "visual"
   }
